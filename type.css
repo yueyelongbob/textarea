@@ -1,0 +1,51 @@
+#main{
+    font-family: monospace;
+    font-size: xx-large;
+    border: 5px solid yellow;
+    height: auto;
+}
+#codomain{
+    padding: 5px;
+    white-space: pre;
+    border: 2px solid green;
+}
+#blue,#cursor{
+    padding: 7px;
+    color: #0000;
+    position: fixed;
+    z-index: -1;
+}
+#selTab,#select,#ancTab{
+    white-space: pre;
+    color: red;
+}
+#select{
+    background-color: #07fc;
+    border-radius: .3em;
+}
+#ancShd{
+    width: 0px;
+    display: inline;
+    margin-left: .3px;
+}
+#anchor{
+    width: 0px;
+    height: calc(1.2em - 3.1px);
+    margin-bottom: calc(3.1px - 1.2em);
+    position: relative;
+    outline: 1.5px solid red;
+    animation: opac 1s steps(2,jump-none) normal infinite;
+}
+@keyframes opac{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+#textbar{
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    border: 0px;
+    overflow: hidden;
+    resize: none;
+    position: fixed;
+}
